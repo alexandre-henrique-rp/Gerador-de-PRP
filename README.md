@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🤖 Gerador Inteligente de PRD</h1>
   
-  [![GitHub license](https://img.shields.io/github/license/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/blob/main/LICENSE)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
   [![GitHub stars](https://img.shields.io/github/stars/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/stargazers)
   [![GitHub forks](https://img.shields.io/github/forks/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/network/members)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
