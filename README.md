@@ -1,313 +1,231 @@
 <div align="center">
-  <h1>🤖 Gerador de PRD com IA Agêntica</h1>
+  <h1>🤖 Gerador Inteligente de PRD</h1>
   
   [![GitHub license](https://img.shields.io/github/license/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/blob/main/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/stargazers)
   [![GitHub forks](https://img.shields.io/github/forks/alexandre-henrique-rp/Gerador-de-PRP?style=for-the-badge)](https://github.com/alexandre-henrique-rp/Gerador-de-PRP/network/members)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
   
-  <p><strong>Sistema de prompts sequenciais para gerar Documentos de Requisitos de Produto (PRD) completos e detalhados usando IA</strong></p>
+  <p><strong>Sistema de IA com 5 agentes especializados para gerar PRDs completos, estruturados e prontos para desenvolvimento</strong></p>
   
   <p>
-    <a href="#-por-que-usar">Por que usar?</a> •
-    <a href="#-como-usar">Como usar</a> •
-    <a href="#-exemplos">Exemplos</a> •
+    <a href="#-como-funciona">Como funciona</a> •
+    <a href="#-agentes-especializados">Agentes</a> •
+    <a href="#-guia-de-uso">Guia de Uso</a> •
     <a href="#-estrutura">Estrutura</a> •
-    <a href="#-contribuição">Contribuição</a>
+    <a href="#-exemplo-completo">Exemplo</a>
   </p>
 </div>
 
-## ✨ Recursos
+---
 
-- **🧠 Simulação de Equipe Especializada**: Trabalhe com três especialistas virtuais:
-  - Analista de Mercado
-  - Gerente de Produto (PM)
-  - Líder Técnico (Tech Lead)
-- **🚀 Fluxo Guiado**: Atue como Diretor do Projeto e guie a IA através de etapas estruturadas
-- **📄 Saída Formatada**: Gere documentos PRD bem estruturados em Markdown
-- **🔄 Processo Iterativo**: Desenvolva requisitos de forma incremental e controlada
+## 🎯 O que é este projeto?
 
-## 🤔 Por Que Usar Este Método? {#-por-que-usar}
+Este é um **sistema de IA multi-agente** que transforma ideias de produto em **Documentos de Requisitos de Produto (PRD) completos e estruturados**, prontos para serem implementados por equipes de desenvolvimento.
 
-Em vez de usar um único prompt gigante, este método **"agêntico"** divide o problema em partes menores e especializadas:
+### ✨ Diferencial
 
-### ✅ Vantagens
+Em vez de usar um único prompt genérico, este sistema utiliza **5 agentes especializados** que trabalham em sequência, cada um com expertise específica, simulando uma equipe de produto real.
 
-| Benefício | Descrição |
-|-----------|-----------|
-| **🎯 Maior Qualidade** | A IA foca em uma área de cada vez, gerando conteúdo mais rico e detalhado |
-| **🎮 Melhor Controle** | Você revisa e aprova cada seção antes de prosseguir |
-| **👥 Simulação Realista** | Imita como uma equipe de produto real colabora |
-| **🔄 Processo Iterativo** | Permite ajustes e melhorias em cada etapa |
+## 🤔 Como Funciona? {#-como-funciona}
 
-### 🆚 Comparação
+O sistema funciona como uma **linha de produção inteligente** com 5 etapas especializadas:
 
-| Método Tradicional | Método Agêntico |
-|-------------------|-----------------|
-| 1 prompt gigante | 4 prompts especializados |
-| Resultado genérico | Resultado detalhado |
-| Sem controle | Controle total do processo |
-| Saída única | Revisão em cada etapa |
+```mermaid
+graph LR
+    A[💡 Sua Ideia] --> B[📋 Product Owner]
+    B --> C[🏗️ Arquiteto de Software]
+    C --> D[📊 Scrum Master]
+    D --> E[🔍 Revisor Sênior]
+    E --> F[⚡ Engenheiro de Prompts]
+    F --> G[📄 PRD Completo + Código]
+```
 
-## 🚀 Como Usar {#-como-usar}
+### 🎭 Os 5 Agentes Especializados {#-agentes-especializados}
+
+| Agente | 👤 Persona | 🎯 Função | 📊 Saída |
+|--------|------------|-----------|----------|
+| **01** | **Product Owner** | Analisa requisitos e regras de negócio | `/doc/requisitos/` |
+| **02** | **Arquiteto de Software** | Quebra em funcionalidades técnicas | `/doc/funcionalidades/` |
+| **03** | **Scrum Master** | Organiza em Epics e Sprints | `/doc/kanban/` |
+| **04** | **Revisor Sênior** | Valida consistência do projeto | Aprovação/Correções |
+| **05** | **Engenheiro de Prompts** | Gera prompts para código | `/doc/prompts/` |
+
+## 🚀 Guia de Uso {#-guia-de-uso}
 
 ### 📋 Pré-requisitos
 
-- ✅ Acesso a uma ferramenta de IA (ChatGPT, Gemini, Claude, etc.)
+- ✅ Acesso a IA (ChatGPT, Claude, Gemini, etc.)
 - ✅ Sua ideia de produto bem definida
-- ✅ Tempo para revisar cada etapa (~30-60 min total)
+- ✅ ~2 horas para execução completa
 
 ### 🎯 Passo a Passo
 
-> **⚠️ Importante:** Mantenha toda a interação na **mesma conversa/chat** para preservar o contexto.
+> **⚠️ Importante:** Execute cada prompt em **sequência** na mesma conversa para manter contexto.
 
-| Etapa | Ação | Tempo Estimado |
-|-------|------|----------------|
-| **1️⃣** | Cole o [Prompt 1](#-prompt-1-analista-de-mercado) + sua ideia | 5 min |
-| **2️⃣** | Revise a análise e cole o [Prompt 2](#-prompt-2-gerente-de-produto) | 10 min |
-| **3️⃣** | Revise os requisitos e cole o [Prompt 3](#-prompt-3-líder-técnico) | 10 min |
-| **4️⃣** | Cole o [Prompt 4](#-prompt-4-compilação-final) para o PRD final | 5 min |
+| Etapa | 📁 Arquivo | ⏱️ Tempo | 🎯 Objetivo |
+|-------|------------|----------|-------------|
+| **1️⃣** | [`01-requisitos.md`](./pronpt/01-requisitos.md) | 15 min | Analisar requisitos de negócio |
+| **2️⃣** | [`02-sintetizador.md`](./pronpt/02-sintetizador.md) | 25 min | Quebrar em funcionalidades |
+| **3️⃣** | [`03-planejador.md`](./pronpt/03-planejador.md) | 20 min | Organizar em Sprints |
+| **4️⃣** | [`04-analize.md`](./pronpt/04-analize.md) | 10 min | Revisar consistência |
+| **5️⃣** | [`05-engenheiro.md`](./pronpt/05-engenheiro.md) | 30 min | Gerar prompts de código |
 
-### 💡 Dicas de Uso
+### 💡 Dicas de Execução
 
 ```markdown
-💡 **Para melhores resultados:**
-• Seja específico ao descrever sua ideia
-• Revise cada seção antes de continuar
-• Peça ajustes quando necessário
-• Mantenha o contexto na mesma conversa
+🎯 **Para melhores resultados:**
+• Execute na ordem sequencial (01 → 05)
+• Mantenha a mesma conversa/chat
+• Seja específico na descrição inicial
+• Revise cada etapa antes de prosseguir
+• Permita que a IA faça perguntas para clarificar
 ```
 
-## 🎬 Exemplo Prático {#-exemplos}
+## 🏗️ Estrutura de Saída {#-estrutura}
 
-### 📱 Caso: App "PetRide" - Uber para Pets
+O sistema gera uma estrutura completa de documentação:
 
-**Ideia inicial:**
-> "Aplicativo de transporte para pets. Donos sem carro podem solicitar motoristas verificados com veículos adaptados para levar seus animais ao veterinário, pet shop ou creche."
+```
+projeto/
+├── doc/                           # 📁 Documentação gerada
+│   ├── requisitos/               # 📋 Análise de negócio
+│   │   ├── 01_Visao_Geral_e_Negocio.md
+│   │   ├── 02_Usuarios_e_Personas.md
+│   │   ├── 03_Stack_Tecnologica_e_Arquitetura.md
+│   │   └── 04_Requisitos_Nao_Funcionais.md
+│   ├── funcionalidades/          # 🔧 Detalhamento técnico
+│   │   ├── funcionalidade_01.md
+│   │   ├── funcionalidade_02.md
+│   │   └── tecnologias_recomendadas.md
+│   ├── kanban/                   # 📊 Gestão de projeto
+│   │   └── kanban.md
+│   └── prompts/                  # ⚡ Prompts para código
+│       ├── T01_prompt.md
+│       ├── T02_prompt.md
+│       └── ...
+└── template/                     # 📄 Templates base
+    ├── requisitos/
+    ├── funcionalidades/
+    └── kanban/
+```
 
-**Resultado após os 4 prompts:**
-- ✅ Análise de mercado detalhada
-- ✅ 2 personas bem definidas (Dona Maria, João)  
-- ✅ 15+ user stories organizadas
-- ✅ Stack tecnológica sugerida
-- ✅ PRD completo de 10 páginas
+### 📊 Templates Incluídos
+
+O projeto vem com **templates profissionais** que guiam a IA:
+
+- **🎯 Requisitos:** Elevator pitch, stakeholders, SMART goals
+- **⚙️ Funcionalidades:** User stories, casos de uso, APIs
+- **📋 Kanban:** Epics, sprints, definition of done
+- **💻 Prompts:** Clean code, SOLID, padrões de IA
+
+## 🎬 Exemplo Completo {#-exemplo-completo}
+
+### 💡 Input: "App de Delivery para Pets"
+
+**Ideia inicial:** 
+> "Aplicativo de delivery especializado em produtos para pets, com ração, brinquedos e consultas veterinárias online"
+
+### 📊 Output Gerado:
 
 <details>
-<summary><strong>📄 Ver exemplo de saída</strong></summary>
+<summary><strong>📋 Ver estrutura completa gerada</strong></summary>
 
-```markdown
-# PRD: PetRide - Transporte Seguro para Pets
+**1. Requisitos de Negócio:**
+- Análise de mercado pet brasileiro (R$ 54 bi)
+- 3 personas detalhadas (Pet owner urbano, Veterinário, etc.)
+- Stack sugerida (React Native, Node.js, MongoDB)
+- Requisitos não-funcionais (99.9% uptime, LGPD)
 
-## 1. Resumo do Problema
-Pet owners sem veículo próprio enfrentam dificuldades para transportar 
-seus animais com segurança...
+**2. Funcionalidades Técnicas:**
+- Sistema de autenticação
+- Catálogo de produtos
+- Carrinho e checkout  
+- Agendamento veterinário
+- Sistema de entrega
+- Avaliações e reviews
 
-## 2. Análise de Mercado  
-- TAM: R$ 2,3 bilhões (mercado pet brasileiro)
-- Principais concorrentes: Uber Pet (limitado), 99Pets...
+**3. Gestão de Projeto:**
+- 8 Epics organizados
+- 45 tarefas distribuídas em 6 sprints
+- Estimativas em story points
+- Critérios de aceite definidos
 
-## 3. User Personas
-**Persona 1: Maria Silva (45 anos)**
-- Profissão: Professora
-- Pet: Gato persa idoso
-- Frustração: Transporte público não aceita pets...
-```
+**4. Prompts de Código:**
+- 45 prompts especializados
+- Padrões Clean Code + SOLID
+- Técnicas CoT, ReAct, APE
+- Exemplos de input/output
 </details>
 
----
+**Resultado:** PRD completo de ~50 páginas, pronto para desenvolvimento!
 
-## 📋 Os Prompts
+## 🆚 Comparação com Métodos Tradicionais
 
-Aqui estão os 4 prompts que formam o núcleo deste sistema.
+| Aspecto | Método Tradicional | **Gerador Inteligente** |
+|---------|-------------------|------------------------|
+| **Tempo** | 2-4 semanas | 2 horas |
+| **Consistência** | Varia por pessoa | Sempre estruturado |
+| **Completude** | Muitas vezes incompleto | 100% das seções |
+| **Técnico** | Foco em negócio | Negócio + Técnico + Código |
+| **Reusabilidade** | Baixa | Templates reutilizáveis |
 
-### 🚀 Prompt 1: Analista de Mercado {#-prompt-1-analista-de-mercado}
+## 🛠️ Tecnologias e Padrões
 
-**🎯 Objetivo:** Inicializar o processo e criar a base estratégica do produto  
-**👤 Persona IA:** Analista de Mercado e Negócios  
-**📊 Saída:** Análise de mercado, concorrentes e personas
+### 🎯 Padrões de IA Utilizados
 
-<details>
-<summary><strong>Clique para ver o Prompt 1</strong></summary>
+- **Chain-of-Thought (CoT):** Raciocínio passo a passo
+- **ReAct:** Pensamento → Ação → Observação  
+- **APE:** Auto-refinamento de prompts
+- **Self-Consistency:** Múltiplas variações
 
-```markdown
-# PERSONA
-Você é um Coordenador de Projetos de Software especialista e atuará como meu assistente para criar um Documento de Requisitos de Produto (PRD) completo.
+### 🏗️ Arquitetura Recomendada
 
-# PROCESSO
-Nosso trabalho será dividido em 4 etapas, simulando uma equipe de especialistas. A cada etapa, você assumirá uma nova persona e usará as informações geradas anteriormente para construir a próxima seção do documento. As personas são:
-1.  **Analista de Mercado e Negócios:** Foco em mercado, público-alvo e concorrentes.
-2.  **Gerente de Produto (Product Manager):** Foco na visão, estratégia e funcionalidades do produto.
-3.  **Líder Técnico (Tech Lead):** Foco nos requisitos técnicos e arquitetura.
-4.  **Compilador Final:** Organização de todo o conteúdo em um único documento coeso.
-
-Não avance para a próxima etapa sem minha confirmação explícita.
-
-# ETAPA 1: ANALISTA DE MERCADO E NEGÓCIOS
-
-**PERSONA ATUAL:** Assuma a persona de um **Analista de Mercado e Negócios**.
-
-**TAREFA:** Com base na minha ideia de produto abaixo, gere a primeira seção do nosso PRD.
-
-**INPUT (MINHA IDEIA DE PRODUTO):**
-[ !!! AQUI VOCÊ DEVE INSERIR SUA IDEIA DE PRODUTO. SEJA O MAIS DETALHADO POSSÍVEL !!! ]
-
-**OUTPUT ESPERADO (Seção 1):**
-Crie um documento em Markdown contendo:
-
-1.  **Resumo do Problema:**
-    * Qual problema principal estamos resolvendo?
-    * Quem enfrenta esse problema?
-    * Por que é importante resolvê-lo agora?
-
-2.  **Análise de Mercado:**
-    * Qual o tamanho estimado do mercado (TAM, SAM, SOM)?
-    * Quais são as principais tendências e oportunidades neste setor?
-
-3.  **Análise de Concorrentes:**
-    * Liste 2-3 concorrentes diretos ou indiretos.
-    * Para cada um, descreva seus pontos fortes e fracos.
-    * Identifique uma brecha ou diferencial que nosso produto pode explorar.
-
-4.  **Definição de User Personas:**
-    * Crie 2 personas detalhadas que representam nosso público-alvo principal.
-    * Inclua: Nome, Idade, Profissão, Objetivos, Frustrações (relacionadas ao problema) e Comportamentos.
-
-Ao final, escreva: "**Análise de Mercado e Personas concluída. Aguardando sua revisão e confirmação para prosseguir para a Etapa 2 (Gerente de Produto).**"
-```
-
-</details>
-
-### 🎯 Prompt 2: Gerente de Produto {#-prompt-2-gerente-de-produto}
-
-**🎯 Objetivo:** Definir visão, estratégia e funcionalidades do produto  
-**👤 Persona IA:** Product Manager experiente  
-**📋 Saída:** Visão, requisitos funcionais e métricas de sucesso
-
-<details>
-<summary><strong>📋 Ver Prompt 2 completo</strong></summary>
-
-```markdown
-# ETAPA 2: GERENTE DE PRODUTO (PRODUCT MANAGER)
-
-**CONTEXTO:** Excelente trabalho na análise anterior. Aprovado. 
-
-**PERSONA ATUAL:** Gerente de Produto (Product Manager) experiente.
-
-**TAREFA:** Utilize as informações da "Análise de Mercado e Personas" para definir visão, estratégia e requisitos funcionais.
-
-**OUTPUT ESPERADO:**
-5. **Visão e Estratégia do Produto**
-6. **Requisitos Funcionais (User Stories)**  
-7. **Métricas de Sucesso (KPIs)**
-```
-</details>
-
-### 🛠️ Prompt 3: Líder Técnico {#-prompt-3-líder-técnico}
-
-**🎯 Objetivo:** Definir aspectos técnicos e arquitetura do sistema  
-**👤 Persona IA:** Tech Lead pragmático e experiente  
-**🔧 Saída:** Requisitos não-funcionais, stack e considerações técnicas
-
-<details>
-<summary><strong>🔧 Ver Prompt 3 completo</strong></summary>
-
-```markdown
-# ETAPA 3: LÍDER TÉCNICO (TECH LEAD)
-
-**CONTEXTO:** Visão e funcionalidades aprovadas.
-
-**PERSONA ATUAL:** Líder Técnico (Tech Lead) pragmático.
-
-**TAREFA:** Detalhar requisitos técnicos e arquitetura.
-
-**OUTPUT ESPERADO:**
-8. **Requisitos Não-Funcionais**
-9. **Arquitetura e Stack Tecnológica**
-10. **Considerações de Implementação**
-```
-</details>
-
-### 📄 Prompt 4: Compilação Final {#-prompt-4-compilação-final}
-
-**🎯 Objetivo:** Consolidar todas as seções em um PRD unificado  
-**👤 Persona IA:** Coordenador de Projetos  
-**📋 Saída:** Documento PRD completo e formatado
-
-<details>
-<summary><strong>📄 Ver Prompt 4 completo</strong></summary>
-
-```markdown
-# ETAPA 4: COMPILAÇÃO FINAL
-
-**PERSONA ATUAL:** Coordenador de Projetos de Software
-
-**TAREFA:** Reunir TODAS as seções em um único PRD
-
-**ESTRUTURA FINAL:**
-1. Resumo do Problema
-2. Análise de Mercado  
-3. Análise de Concorrentes
-4. User Personas
-5. Visão e Estratégia
-6. Requisitos Funcionais
-7. Métricas de Sucesso
-8. Requisitos Não-Funcionais
-9. Arquitetura e Stack
-10. Considerações de Implementação
-```
-</details>
-
----
-
-## 🏗️ Estrutura do Projeto {#-estrutura}
-
-```
-Gerador-de-PRP/
-├── 01-orquestrador/           # 🔍 Análise de mercado inicial
-│   └── O_Mestre_Orquestrador_e_o_Analista_de_Mercado.md
-├── 02-produto/               # 🎯 Definição do produto  
-│   └── O_Gerente_de_Produto.md
-├── 04-tec/                   # 🔧 Especificações técnicas
-│   └── O_Líder_Técnico.md
-├── 04-final/                 # 📋 Documento final consolidado
-│   └── A_Compilação_Final.md
-└── README.md                 # 📖 Este arquivo
-```
+- **Clean Code:** Código limpo e legível
+- **SOLID:** Princípios de design
+- **DDD:** Domain-Driven Design
+- **Microserviços:** Escalabilidade
 
 ## 🤝 Contribuição {#-contribuição}
 
-Contribuições são bem-vindas! Para contribuir:
+### 🎯 Como Contribuir
 
 1. **Fork** o projeto
-2. **Crie** uma branch (`git checkout -b feature/NovaFuncionalidade`)
-3. **Commit** suas mudanças (`git commit -m 'Add: Nova funcionalidade'`)
-4. **Push** para a branch (`git push origin feature/NovaFuncionalidade`) 
-5. **Abra** um Pull Request
+2. **Clone** localmente
+3. **Melhore** templates ou prompts
+4. **Teste** com projetos reais
+5. **Submeta** Pull Request
 
-### 💡 Como Ajudar
+### 💡 Ideias de Melhorias
 
-- 🐛 Reportar bugs ou problemas
-- 💡 Sugerir melhorias nos prompts
-- 📝 Melhorar a documentação
-- ⭐ Dar uma estrela no projeto
+- [ ] Templates para outros domínios (fintech, saúde, educação)
+- [ ] Integração com ferramentas (Jira, Notion, Figma)
+- [ ] Versões em outros idiomas
+- [ ] Templates para diferentes metodologias (Shape Up, Design Sprint)
 
 ## 📄 Licença
 
 Distribuído sob a licença MIT. Veja [`LICENSE`](LICENSE) para mais informações.
 
+## 🏆 Créditos
+
+Inspirado nas melhores práticas de:
+- Prompt Engineering (OpenAI, Anthropic, Google)
+
 ---
 
 <div align="center">
-  <p><strong>📧 Contato</strong></p>
-  
-  Feito com ❤️ por <a href="https://github.com/alexandre-henrique-rp">Alexandre Henrique</a>
+  <p><strong>🚀 Pronto para gerar seu PRD inteligente?</strong></p>
   
   <p>
-    <a href="https://github.com/alexandre-henrique-rp/Gerador-de-PRP">🔗 Repositório</a> •
-    <a href="https://github.com/alexandre-henrique-rp/Gerador-de-PRP/issues">🐛 Issues</a> •
+    <a href="./pronpt/01-requisitos.md">🎯 Começar com Prompt 1</a> •
+    <a href="https://github.com/alexandre-henrique-rp/Gerador-de-PRP/issues">🐛 Reportar Issue</a> •
     <a href="https://github.com/alexandre-henrique-rp/Gerador-de-PRP/discussions">💬 Discussões</a>
   </p>
   
-  <p><em>Se este projeto te ajudou, considere dar uma ⭐️!</em></p>
+  <p>
+    Feito com ❤️ por <a href="https://github.com/alexandre-henrique-rp">Alexandre Henrique</a>
+  </p>
+  
+  <p><em>⭐ Se este projeto te ajudou, considere dar uma estrela!</em></p>
 </div>
-
